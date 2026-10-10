@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Floresta do Crepúsculo — Manual do Jogador</title>
+  <title>Twilight RPG — Manual Completo</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,10 +15,10 @@
       <div class="logo">
         <span class="logo-icon">☽</span>
         <h1>TWILIGHT</h1>
-        <span class="logo-sub">Floresta do Crepúsculo</span>
+        <span class="logo-sub">Manual do Jogador</span>
       </div>
       <div class="search-box">
-        <input type="text" id="searchInput" placeholder="Pesquisar... (ex: Harpia, Sombra, Força)" autocomplete="off">
+        <input type="text" id="searchInput" placeholder="Pesquisar no manual... (ex: Harpia, Sombra, Força)" autocomplete="off">
         <span class="search-icon">⌕</span>
         <div id="searchResults" class="search-results"></div>
       </div>
@@ -35,7 +35,7 @@
           <li><a href="#criaturas">Criaturas</a></li>
           <li><a href="#morte">Morte no Twilight</a></li>
           <li><a href="#comunidades">Comunidades</a></li>
-          <li><a href="#organizacoes">Organizações</a></li>
+          <li><a href="#organizacoes">Organizações de Aurora</a></li>
         </ul>
       </li>
       <li><a href="#mecanicas" class="nav-link">Mecânicas</a>
@@ -43,7 +43,7 @@
           <li><a href="#atributos">Atributos</a></li>
           <li><a href="#pericias">Perícias</a></li>
           <li><a href="#rolagem">Sistema de Dados</a></li>
-          <li><a href="#ficha">Ficha</a></li>
+          <li><a href="#ficha">Ficha de Personagem</a></li>
         </ul>
       </li>
       <li><a href="#depravacoes" class="nav-link">Depravações</a>
@@ -63,10 +63,9 @@
   </nav>
 
   <main class="content" id="content">
-
     <!-- ===================== UNIVERSO ===================== -->
     <section id="universo" class="section" data-searchable>
-      <h2 class="section-title">O Universo</h2>
+      <h2 class="section-title">O Universo do Twilight</h2>
     </section>
 
     <section id="principios" class="section" data-searchable>
@@ -78,80 +77,90 @@
 
     <section id="entrada" class="section" data-searchable>
       <h3>Como um ser humano entra no Twilight?</h3>
-      <p>Existem vários meios de adentrar o Twilight. O mais comum deles é a <strong>morte carnal</strong>: o corpo físico morre, mas ainda resta o espírito. Esse é um dos meios de adentrar o Twilight: simplesmente <strong>morrer</strong>.</p>
-      <p>Dependendo das circunstâncias da morte, o espírito surgirá em diferentes lugares. Por exemplo, uma morte por <strong>suicídio</strong> faria com que o espírito surgisse na <strong>Floresta Nevada</strong>.</p>
+      <p>Existem vários meios de adentrar o Twilight. O mais comum deles é a <strong>morte carnal</strong>, o conceito mais tradicional de morte: o corpo físico morre, mas ainda resta o espírito.</p>
+      <p>Esse é um dos meios de adentrar o Twilight: simplesmente <strong>morrer</strong>.</p>
+      <p>Dependendo das circunstâncias da morte, o espírito surgirá em diferentes lugares do Twilight. Por exemplo, uma morte por <strong>suicídio</strong> faria com que o espírito surgisse na <strong>Floresta Nevada</strong>.</p>
+      
+      <div class="card">
+        <h4>Ritual de Desecração</h4>
+        <p>Outro modo de adentrar o Twilight seria por meio de um <strong>ritual de desecração</strong>, no qual uma série de requisitos precisa ser cumprida.</p>
+        <p>Esse é o método menos seguro de entrar no Twilight, já que é necessário utilizar um <strong>receptáculo vivo</strong> e o processo normalmente termina na criação de alguma nova entidade.</p>
+      </div>
 
-      <div class="two-col">
-        <div class="card">
-          <h4>Ritual de Desecração</h4>
-          <p>Método menos seguro. Exige um <strong>receptáculo vivo</strong> e normalmente termina na criação de alguma nova entidade.</p>
-        </div>
-        <div class="card">
-          <h4>Portão Ancião</h4>
-          <p>Entradas que se originaram naturalmente (embora nem sempre sejam formadas de maneira natural).</p>
-        </div>
+      <div class="card">
+        <h4>Portão Ancião</h4>
+        <p>Outra alternativa seria através de um <strong>Portão Ancião</strong>.</p>
+        <p>Os Portões Anciões são entradas que se originaram naturalmente, embora nem sempre esses portões sejam formados de maneira natural.</p>
       </div>
     </section>
 
     <section id="criaturas" class="section" data-searchable>
       <h3>Como funcionam as criaturas do Twilight?</h3>
-      <p>Cada região possui seu próprio <strong>nicho de criaturas</strong>, composto tanto por criaturas pacíficas quanto hostis.</p>
-      <p>A <strong>Floresta Nevada</strong>, por exemplo, possui como uma de suas principais ameaças as <strong>Harpias</strong> — mulheres com características de aves. Por possuírem visão extremamente ruim, suas caçadas normalmente ocorrem durante o dia. Sua sede de sangue é quase insaciável, chegando a beberem até o sangue que escorre das árvores.</p>
-
+      <p>Cada região possui seu próprio <strong>nicho de criaturas</strong>, que pode ser composto tanto por criaturas pacíficas quanto hostis.</p>
+      <p>Por exemplo, a <strong>Floresta Nevada</strong>, citada anteriormente, possui como uma de suas principais ameaças as <strong>Harpias</strong> — mulheres com características de aves.</p>
+      <p>Por possuírem uma visão extremamente ruim, suas caçadas normalmente ocorrem durante o dia. Sua sede de sangue é quase insaciável, chegando ao ponto de beberem até mesmo o sangue que escorre das árvores.</p>
+      
       <div class="highlight">
-        <p><strong>Importante:</strong> Essas criaturas não simplesmente apareceram ou nasceram no Twilight. Um dia, elas já foram seres humanos. O que as transforma é a presença de um <strong>grande sentimento durante sua morte</strong>.</p>
+        <p><strong>Importante:</strong> Essas criaturas não simplesmente apareceram ou nasceram no Twilight. Um dia, elas já foram seres humanos que chegaram ao Twilight através de um dos métodos citados anteriormente.</p>
+        <p>O que faz com que elas se tornem essas criaturas é a presença de um <strong>grande sentimento durante sua morte</strong>. Em alguns casos, isso pode ser ainda mais específico.</p>
+      </div>
+
+      <div class="card example">
+        <h4>Exemplo — Harpia</h4>
+        <p>Uma mulher que, durante sua vida, foi impedida de se expressar e que acabou sendo vítima de um assassinato violento simplesmente iria para o Twilight caso cumprisse os requisitos necessários.</p>
+        <p>Agora, adicione uma emoção negativa a essa situação: uma mulher impedida de se expressar em vida, vítima de um assassinato violento e que, no momento de sua morte, carregava consigo um <strong>ódio mortal</strong>.</p>
+        <p>Nesse caso, ela iria para o Twilight como uma entidade — neste exemplo, uma <strong>Harpia</strong>.</p>
         <p><em>Cada morte e cada sentimento extremo geram uma entidade diferente.</em></p>
       </div>
 
-      <div class="example-row">
-        <div class="card example">
-          <h4>Exemplo — Harpia</h4>
-          <p>Mulher impedida de se expressar em vida, vítima de assassinato violento e que, no momento da morte, carregava um <strong>ódio mortal</strong> → torna-se uma Harpia.</p>
-        </div>
-        <div class="card example">
-          <h4>Exemplo — Homens-Pedra</h4>
-          <p>Pessoas que em vida sempre se sentiram <strong>estagnadas</strong>, mas que no momento da morte se arrependeram de suas decisões.</p>
-        </div>
+      <div class="card example">
+        <h4>Exemplo — Homens-Pedra (criatura pacífica)</h4>
+        <p>Os Homens-Pedra são pessoas que, em vida, sempre se sentiram <strong>estagnadas em um mesmo lugar</strong>, mas que, no momento de sua morte, se arrependeram de suas decisões.</p>
       </div>
 
       <h4>Outras formas de transformação</h4>
-      <p>Um habitante do Twilight pode se tornar entidade caso seu <strong>Medidor de Humanidade</strong> chegue a 0%. A transformação corresponde à natureza da pessoa durante sua morte no mundo pré-Twilight.</p>
+      <p>Também pode ocorrer de um habitante do Twilight se tornar uma entidade caso seu <strong>Medidor de Humanidade</strong> chegue a 0%.</p>
+      <p>Quando isso acontece, a pessoa se transforma em uma entidade correspondente à sua natureza durante sua morte no mundo pré-Twilight.</p>
 
-      <div class="two-col">
-        <div class="card">
-          <h4>Puro Espírito</h4>
-          <p>Pessoas que chegaram ao Twilight <strong>não através da morte carnal</strong> e que posteriormente perderam toda a humanidade.</p>
-        </div>
-        <div class="card">
-          <h4>Sombras</h4>
-          <p>Almas que afundaram em <strong>pura desesperança e tristeza</strong>. Manifestam-se como humanoides formados por sombras. Habitam principalmente a <strong>Floresta do Sussurro</strong>. Vagam sem interagir com nada.</p>
-        </div>
+      <h4>Entidades com regras próprias</h4>
+      
+      <div class="card">
+        <h4>Puro Espírito</h4>
+        <p>Os Puros Espíritos são pessoas que chegaram ao Twilight <strong>não através da morte carnal</strong> e que posteriormente perderam toda a sua humanidade.</p>
+      </div>
+
+      <div class="card">
+        <h4>Sombras</h4>
+        <p>As Sombras são entidades diferentes das demais.</p>
+        <p>Essas entidades <strong>não estão originalmente no Twilight</strong>. Elas se tratam de almas que afundaram em um estado de <strong>pura desesperança e tristeza</strong>.</p>
+        <p>Essas emoções são capazes de atravessar o manto do Twilight, fazendo com que essas almas se manifestem como seres humanoides completamente formados por sombras.</p>
+        <p>Essas criaturas simplesmente vagam pelo Twilight, sem interagir com nada ao seu redor.</p>
+        <p>As Sombras habitam principalmente a <strong>Floresta do Sussurro</strong>.</p>
       </div>
     </section>
 
     <section id="morte" class="section" data-searchable>
       <h3>Como morremos no Twilight se já estamos mortos?</h3>
-      <div class="two-col">
-        <div class="card">
-          <h4>Zerar a Humanidade</h4>
-          <p>Você se torna uma entidade correspondente à sua natureza.</p>
-        </div>
-        <div class="card">
-          <h4>100% Conturbação da Alma</h4>
-          <p>Ocorre uma <strong>desecração</strong>. O espírito não suporta o acúmulo de energia e perece.</p>
-        </div>
-      </div>
+      <p>Existem vários tipos de morte dentro do Twilight.</p>
+      <ul>
+        <li>Uma das possíveis formas de morrer no Twilight seria <strong>zerando sua Humanidade</strong>, fazendo com que você se torne uma entidade.</li>
+        <li>Outra possibilidade seria chegar ao nível de <strong>100% de Conturbação da Alma</strong>.</li>
+      </ul>
+      <p>Quando isso acontece, ocorre uma <strong>desecração</strong>. O espírito não seria capaz de suportar o acúmulo de energia e, consequentemente, pereceria.</p>
     </section>
 
     <section id="comunidades" class="section" data-searchable>
       <h3>Sobre as comunidades do Twilight</h3>
-      <p>O instinto primitivo dos seres humanos é sempre buscar outros indivíduos e formar comunidades — e isso não é diferente no Twilight.</p>
-      <p>O Twilight é separado em <strong>reinos, estados, pequenas cidades e comunidades</strong>. O principal reino é <strong>Aurora</strong>, onde está concentrada a maior população de seres não cientes. Mesmo sendo o reino com maior população, Aurora abriga <strong>cinco dos grupos mais influentes</strong> de todo o Twilight.</p>
+      <p>O instinto primitivo dos seres humanos é sempre buscar outros indivíduos e formar comunidades, e isso não é diferente no Twilight.</p>
+      <p>Não se sabe há quanto tempo esse lugar existe, mas é tempo suficiente para que uma grande variedade de comunidades tenha surgido.</p>
+      <p>O Twilight é separado em <strong>reinos, estados, pequenas cidades e comunidades</strong>.</p>
+      <p>O principal reino é <strong>Aurora</strong>, onde está concentrada a maior população de seres não cientes.</p>
+      <p>Porém, mesmo sendo o reino com a maior população, Aurora também abriga <strong>cinco dos grupos mais influentes de todo o Twilight</strong>.</p>
     </section>
 
     <section id="organizacoes" class="section" data-searchable>
       <h3>As cinco organizações mais influentes de Aurora</h3>
-
+      
       <div class="org-grid">
         <div class="org-card">
           <h4>Templo de Vênus</h4>
@@ -167,7 +176,7 @@
         </div>
         <div class="org-card">
           <h4>Carnicidas</h4>
-          <p class="leader">Zero Vendetta, Charlotte Zevon e Greg</p>
+          <p class="leader">Líderes: Zero Vendetta, Charlotte Zevon e Greg</p>
         </div>
         <div class="org-card">
           <h4>Carnival Circus</h4>
@@ -175,58 +184,60 @@
         </div>
       </div>
 
-      <p>Cada organização possui seu próprio foco, objetivos e princípios. Existem também grupos independentes (como a <strong>Casa das Bruxas</strong>) e organizações menores que servem às cinco grandes.</p>
+      <p>Cada organização possui seu próprio foco, objetivos e princípios, que serão explicados individualmente para cada jogador de acordo com a organização escolhida.</p>
+      <p>Porém, essas cinco organizações não compõem 100% dos grupos existentes no Twilight. Existem diversos outros grupos que funcionam de maneira independente, como a <strong>Casa das Bruxas</strong>. Porém, também existem organizações menores que servem diretamente a alguma das cinco grandes organizações.</p>
 
       <div class="card">
         <h4>O Triângulo Mercante</h4>
-        <p>Odette, Will e os Carnicidas possuem um <strong>Triângulo Mercante</strong>, realizando breves parcerias comerciais. Isso os coloca entre as organizações mais ricas do Twilight.</p>
-        <p>A moeda principal é o <strong>Auron</strong>. Existem outras moedas e mercados espalhados pelo Twilight.</p>
+        <p>Odette, Will e os Carnicidas possuem um <strong>Triângulo Mercante</strong>, realizando breves parcerias comerciais entre si.</p>
+        <p>Essas relações fazem com que eles estejam entre as organizações mais ricas de todo o Twilight.</p>
+        <p>A moeda atualmente utilizada no Twilight é o <strong>Auron</strong>, sendo essa a moeda principal. Porém, existem outras moedas e diferentes tipos de mercado espalhados pelo Twilight.</p>
       </div>
     </section>
 
     <!-- ===================== MECÂNICAS ===================== -->
     <section id="mecanicas" class="section" data-searchable>
-      <h2 class="section-title">Mecânicas</h2>
+      <h2 class="section-title">Mecânicas do Sistema</h2>
     </section>
 
     <section id="atributos" class="section" data-searchable>
       <h3>Atributos</h3>
       <p>Você tem <strong>16 pontos</strong> para distribuir entre os atributos.</p>
-
+      
       <div class="attr-table">
         <div class="attr-row">
           <div class="attr-name">Força</div>
-          <div class="attr-skills">Briga · Armas Brancas (pesadas) · Atletismo (força) · Intimidação Física</div>
+          <div class="attr-skills">Briga, Armas Brancas (pesadas), Atletismo (força), Intimidação Física</div>
         </div>
         <div class="attr-row">
           <div class="attr-name">Agilidade</div>
-          <div class="attr-skills">Furtividade · Acrobacia · Tiro · Arte da Fuga · Lockpick · Roubo · Prestidigitação · Armas Brancas (leves)</div>
+          <div class="attr-skills">Furtividade, Acrobacia, Tiro, Arte da Fuga, Lockpick, Roubo, Prestidigitação, Armas Brancas (leves)</div>
         </div>
         <div class="attr-row">
           <div class="attr-name">Vigor</div>
-          <div class="attr-skills">Sobrevivência · Resistência Física · Atletismo (resistência)</div>
+          <div class="attr-skills">Sobrevivência, Resistência Física, Atletismo (resistência)</div>
         </div>
         <div class="attr-row">
           <div class="attr-name">Intelecto</div>
-          <div class="attr-skills">Investigação · Análise · Erudição · História do Twilight · Literatura · Decifração · Navegação · Memória · Medicina · Nível da Depravação</div>
+          <div class="attr-skills">Investigação, Análise, Erudição, História do Twilight, Literatura, Decifração de Línguas, Navegação, Memória, Medicina, Nível da Depravação</div>
         </div>
         <div class="attr-row">
           <div class="attr-name">Carisma</div>
-          <div class="attr-skills">Persuasão · Diplomacia · Liderança · Etiqueta · Influência · Negociação</div>
+          <div class="attr-skills">Persuasão, Diplomacia, Liderança, Etiqueta, Influência, Negociação</div>
         </div>
         <div class="attr-row">
           <div class="attr-name">Presença</div>
-          <div class="attr-skills">Atuação · Performance · Intimidação · Influência no Twilight · Empatia · Comando de Presença</div>
+          <div class="attr-skills">Atuação, Performance, Intimidação, Influência no Twilight, Empatia, Comando de Presença</div>
         </div>
         <div class="attr-row">
           <div class="attr-name">Determinação</div>
-          <div class="attr-skills">Resistência à Perda de Humanidade · Compreensão de Alma/Espírito · Concentração · Coragem · Audição</div>
+          <div class="attr-skills">Resistência à Perda de Humanidade, Compreensão de Alma/Espírito, Concentração, Coragem, Audição</div>
         </div>
       </div>
 
       <h4>Limites por tipo de personagem</h4>
       <table class="simple-table">
-        <tr><th>Tipo</th><th>Limite máximo</th></tr>
+        <tr><th>Tipo</th><th>Limite máximo por atributo</th></tr>
         <tr><td>Especialista puro</td><td>6</td></tr>
         <tr><td>Versátil</td><td>4</td></tr>
         <tr><td>Generalista</td><td>3</td></tr>
@@ -236,112 +247,133 @@
     <section id="pericias" class="section" data-searchable>
       <h3>Perícias</h3>
       <p>Você tem <strong>17 pontos</strong> para distribuir entre as perícias.</p>
-
+      
       <div class="highlight">
-        <h4>Como distribuir</h4>
+        <h4>Como distribuir (recomendação)</h4>
         <ol>
-          <li>Escolha <strong>1–2 perícias principais</strong> → 4 ou 5 pontos</li>
-          <li>Escolha <strong>2–3 perícias secundárias</strong> → 2 ou 3 pontos</li>
-          <li>Espalhe o restante em 1 ponto</li>
+          <li>Escolha <strong>1–2 perícias principais</strong> (o que define o personagem) → Coloque 4 ou 5 pontos nelas.</li>
+          <li>Escolha <strong>2–3 perícias secundárias</strong> (apoio / utilidade) → Coloque 2 ou 3 pontos.</li>
+          <li>O restante espalhe em 1 ponto (só para não ficar zero).</li>
         </ol>
       </div>
 
-      <div class="example-row">
-        <div class="card">
-          <h4>Guerreiro versátil</h4>
-          <ul>
-            <li>Combate corpo-a-corpo → 5</li>
-            <li>Atletismo → 3</li>
-            <li>Intimidação → 3</li>
-            <li>Sobrevivência → 2</li>
-            <li>Percepção → 2</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h4>Ladrão / explorador</h4>
-          <ul>
-            <li>Furtividade → 5</li>
-            <li>Ladinagem → 4</li>
-            <li>Acrobacia → 3</li>
-            <li>Percepção → 2</li>
-            <li>Investigação → 1</li>
-          </ul>
-        </div>
+      <h4>Exemplos práticos com 17 pontos</h4>
+      
+      <div class="card">
+        <h4>Exemplo 1 – Guerreiro versátil</h4>
+        <ul>
+          <li>Combate corpo-a-corpo → 5</li>
+          <li>Atletismo → 3</li>
+          <li>Intimidação → 3</li>
+          <li>Sobrevivência → 2</li>
+          <li>Percepção → 2</li>
+        </ul>
       </div>
 
       <div class="card">
-        <h4>Mago / sábio</h4>
+        <h4>Exemplo 2 – Ladrão / explorador</h4>
+        <ul>
+          <li>Furtividade → 5</li>
+          <li>Ladinagem → 4</li>
+          <li>Acrobacia → 3</li>
+          <li>Percepção → 2</li>
+          <li>Investigação → 1</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h4>Exemplo 3 – Mago / sábio</h4>
         <ul>
           <li>Arcanismo / Conhecimento → 5</li>
-          <li>Investigação → 3 · História → 3 · Percepção → 2 · Medicina → 2</li>
+          <li>Investigação → 3</li>
+          <li>História → 3</li>
+          <li>Percepção → 2</li>
+          <li>Medicina → 2</li>
         </ul>
       </div>
 
       <h4>Bônus de Afiliação</h4>
       <table class="simple-table">
         <tr><th>Organização</th><th>Bônus</th></tr>
-        <tr><td>Carnicidas</td><td>+4 Conturbação da Alma · −1 Intelecto</td></tr>
-        <tr><td>Carnival Circus</td><td>+3 Intelecto · +4 Carisma · −3 Força</td></tr>
-        <tr><td>Trupe do Will</td><td>−3 Intelecto · +4 Força</td></tr>
-        <tr><td>Culto da Lua</td><td>+2 Presença · +1 Intelecto</td></tr>
+        <tr><td>Carnicidas</td><td>+4 Conturbação da Alma, -1 Intelecto</td></tr>
+        <tr><td>Carnival Circus</td><td>+3 Intelecto, +4 Carisma, -3 Força</td></tr>
+        <tr><td>Trupe do Will</td><td>-3 Intelecto, +4 Força</td></tr>
+        <tr><td>Culto da Lua</td><td>+2 Presença, +1 Intelecto</td></tr>
       </table>
     </section>
 
     <section id="rolagem" class="section" data-searchable>
-      <h3>Sistema de Rolagem</h3>
-      <p>Quando o sucesso não é garantido, role:</p>
+      <h3>Sistema de Rolagem (Dados)</h3>
+      <p>Toda vez que você tentar fazer algo em que o sucesso não é garantido, você rola:</p>
       <div class="formula">1d10 + Atributo + Perícia</div>
+      <p>O resultado dessa conta é comparado com a <strong>Dificuldade</strong> definida pelo Narrador.</p>
 
+      <h4>Tabela de Dificuldades</h4>
       <table class="simple-table">
         <tr><th>Dificuldade</th><th>Número</th><th>Quando usar</th></tr>
-        <tr><td>Fácil</td><td>8</td><td>Situações simples</td></tr>
-        <tr><td>Normal</td><td>10</td><td>Maioria das situações</td></tr>
-        <tr><td>Difícil</td><td>13</td><td>Pressão ou oposição</td></tr>
+        <tr><td>Fácil</td><td>8</td><td>Situações simples, com tempo e tranquilidade</td></tr>
+        <tr><td>Normal</td><td>10</td><td>A maioria das situações comuns</td></tr>
+        <tr><td>Difícil</td><td>13</td><td>Pressão, oposição ou condições ruins</td></tr>
         <tr><td>Muito Difícil</td><td>16</td><td>Situações bem complicadas</td></tr>
-        <tr><td>Extrema</td><td>19+</td><td>Feitos heroicos</td></tr>
+        <tr><td>Extrema / Quase impossível</td><td>19+</td><td>Feitos heroicos ou desesperados</td></tr>
       </table>
 
-      <div class="two-col">
-        <div class="card">
-          <h4>Resultados</h4>
-          <ul>
-            <li>Abaixo → Falha</li>
-            <li>Igual ou acima → Sucesso</li>
-            <li>+5 ou mais → Sucesso Bom</li>
-            <li>+10 ou mais → Sucesso Excepcional</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h4>Regras especiais</h4>
-          <ul>
-            <li><strong>Crítico (10):</strong> sucesso automático + explode</li>
-            <li><strong>Falha Crítica (1):</strong> algo ruim extra</li>
-            <li><strong>Vantagem:</strong> 2d10, fica com o maior</li>
-            <li><strong>Desvantagem:</strong> 2d10, fica com o menor</li>
-          </ul>
-        </div>
+      <h4>Interpretação dos resultados</h4>
+      <ul>
+        <li><strong>Abaixo da Dificuldade</strong> → Falha</li>
+        <li><strong>Igual ou acima</strong> → Sucesso</li>
+        <li><strong>5 ou mais acima</strong> → Sucesso Bom (você consegue com estilo ou algum benefício extra)</li>
+        <li><strong>10 ou mais acima</strong> → Sucesso Excepcional (resultado muito acima do esperado)</li>
+      </ul>
+
+      <h4>Regras especiais importantes</h4>
+      <div class="card">
+        <h4>1. Crítico (10 natural)</h4>
+        <p>Quando o d10 mostrar 10, você consegue um sucesso automático e ainda pode rolar o d10 de novo e somar o novo resultado. Se tirar 10 de novo, continua somando (explosão).</p>
+      </div>
+      <div class="card">
+        <h4>2. Falha Crítica (1 natural)</h4>
+        <p>Quando o d10 mostrar 1, acontece uma falha crítica. Além de falhar, algo de ruim extra acontece (o Narrador decide o que).</p>
+      </div>
+      <div class="card">
+        <h4>3. Vantagem e Desvantagem</h4>
+        <ul>
+          <li><strong>Vantagem:</strong> Rola 2d10 e fica com o maior resultado.</li>
+          <li><strong>Desvantagem:</strong> Rola 2d10 e fica com o menor resultado.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>4. Testes Resistidos</h4>
+        <p>Quando duas pessoas estão competindo diretamente (ex: você tenta furtar e o guarda tenta perceber), os dois rolam normalmente. Quem tirar o maior resultado vence. Em caso de empate, a situação fica como estava (ou o defensor leva vantagem).</p>
+      </div>
+      <div class="card">
+        <h4>5. Perícias que usam dois atributos</h4>
+        <p>Algumas perícias podem ser ligadas a mais de um atributo (ex: Armas Brancas pode usar Força ou Agilidade).</p>
       </div>
     </section>
 
     <section id="ficha" class="section" data-searchable>
       <h3>Ficha de Personagem</h3>
       <div class="ficha">
-        <div class="ficha-row"><strong>Nome:</strong> _______________________________ &nbsp;&nbsp; <strong>Afiliação:</strong> _______________________________</div>
-        <div class="ficha-row"><strong>Data de Nascimento:</strong> _______________ &nbsp;&nbsp; <strong>Data de Morte:</strong> _______________</div>
-
+        <div class="ficha-row"><strong>Nome:</strong> _______________________________</div>
+        <div class="ficha-row"><strong>Afiliação:</strong> _______________________________</div>
+        <div class="ficha-row"><strong>Data de Nascimento:</strong> _______________________________</div>
+        <div class="ficha-row"><strong>Data de Morte:</strong> _______________________________</div>
+        
         <h4>Atributos (16 pontos)</h4>
         <div class="ficha-attrs">
-          <span>Força ___</span>
-          <span>Intelecto ___</span>
-          <span>Carisma ___</span>
-          <span>Agilidade ___</span>
-          <span>Determinação ___</span>
-          <span>Presença ___</span>
-          <span>Vigor ___</span>
+          <span>Força: ___</span>
+          <span>Intelecto: ___</span>
+          <span>Carisma: ___</span>
+          <span>Agilidade: ___</span>
+          <span>Determinação: ___</span>
+          <span>Presença: ___</span>
+          <span>Vigor: ___</span>
         </div>
 
         <h4>Alma & Humanidade</h4>
-        <div class="ficha-row">Conturbação da Alma: (decisão do mestre) &nbsp;&nbsp; Níveis de Humanidade: (decisão do mestre)</div>
+        <div class="ficha-row">Conturbação da Alma: (decisão do mestre)</div>
+        <div class="ficha-row">Níveis de Humanidade: (decisão do mestre)</div>
 
         <h4>Passiva & Efeito Twilight</h4>
         <div class="ficha-row">Passiva: _______________________________</div>
@@ -355,23 +387,24 @@
     <!-- ===================== DEPRAVAÇÕES ===================== -->
     <section id="depravacoes" class="section" data-searchable>
       <h2 class="section-title">Depravações do Espírito</h2>
-      <p class="intro">As oito faces do Twilight. Não são magias comuns — são forças que habitam a fronteira entre o que existe e o que foi negado. Cada uma oferece poder real… e cobra um preço em humanidade.</p>
+      <p class="intro">As Depravações do Espírito são as oito faces do Twilight. Elas não são magias comuns. São forças que habitam a fronteira entre o que existe e o que foi negado. Cada uma oferece poder real… e cobra um preço em humanidade.</p>
+      <p><strong>Quanto mais você usa, mais o Twilight marca você.</strong></p>
     </section>
 
     <section id="deprav-regras" class="section" data-searchable>
-      <h3>Como funcionam</h3>
+      <h3>Como funcionam mecanicamente</h3>
       <ul>
-        <li>Cada personagem pode se conectar a <strong>duas Depravações principais</strong> (ou nenhuma).</li>
-        <li>Rolagem: <strong>1d20 + Atributo + Nível da Depravação</strong></li>
-        <li>Nível funciona como perícia (1 a 5+).</li>
-        <li>Usos fortes ou cruéis podem exigir teste de <strong>Resistência à Perda de Humanidade</strong>.</li>
-        <li><strong>7 pontos</strong> para distribuir entre as duas depravações.</li>
+        <li>Cada personagem pode se conectar a <strong>duas Depravações principais</strong> na criação (ou nenhuma, se quiser permanecer mais humano).</li>
+        <li>Para usar qualquer poder de uma Depravação, o personagem rola: <strong>1d20 + Atributo relacionado + Nível da Depravação</strong></li>
+        <li>O Nível da Depravação funciona como uma perícia sobrenatural (começa em 1 e pode subir até 5 na criação, depois mais com experiência).</li>
+        <li>Todo uso de poder de Depravação pode exigir um teste de <strong>Resistência à Perda de Humanidade</strong> (a critério do Narrador, especialmente em usos fortes ou cruéis).</li>
       </ul>
 
-      <div class="formula">1d20 + Atributo + Nível da Depravação</div>
+      <p><strong>7 pontos</strong> para distribuir entre duas depravações.</p>
 
+      <h4>Atributos sugeridos por Depravação</h4>
       <table class="simple-table">
-        <tr><th>Depravação</th><th>Principal</th><th>Secundário</th></tr>
+        <tr><th>Depravação</th><th>Atributo Principal</th><th>Atributo Secundário</th></tr>
         <tr><td>Sombra</td><td>Agilidade</td><td>Determinação</td></tr>
         <tr><td>Carne</td><td>Força</td><td>Determinação</td></tr>
         <tr><td>Mente</td><td>Intelecto</td><td>Presença</td></tr>
@@ -382,251 +415,339 @@
         <tr><td>Medo</td><td>Presença</td><td>Determinação</td></tr>
       </table>
 
+      <h4>Sistema de Rolagem das Depravações (d20)</h4>
+      <div class="formula">1d20 + Atributo + Nível da Depravação</div>
+
       <table class="simple-table">
-        <tr><th>Dificuldade</th><th>Alvo</th></tr>
-        <tr><td>Simples / Sutil</td><td>12</td></tr>
-        <tr><td>Normal</td><td>18</td></tr>
-        <tr><td>Forte / Arriscado</td><td>20</td></tr>
-        <tr><td>Extremo</td><td>25+</td></tr>
+        <tr><th>Dificuldade do Poder</th><th>Número Alvo</th><th>Quando usar</th></tr>
+        <tr><td>Poder Simples / Sutil</td><td>12</td><td>Efeitos leves, em condições favoráveis</td></tr>
+        <tr><td>Poder Normal</td><td>18</td><td>A maioria dos usos</td></tr>
+        <tr><td>Poder Forte / Arriscado</td><td>20</td><td>Efeitos poderosos ou em combate intenso</td></tr>
+        <tr><td>Poder Extremo</td><td>25+</td><td>Feitos muito grandes ou desesperados</td></tr>
       </table>
+
+      <h4>Interpretação dos Resultados (Depravações)</h4>
+      <ul>
+        <li><strong>Abaixo da Dificuldade</strong> → Falha (o poder não acontece ou sai fraco)</li>
+        <li><strong>Igual ou até +4 acima</strong> → Sucesso Normal</li>
+        <li><strong>+5 a +9 acima</strong> → Sucesso Bom (efeito maior ou com benefício extra)</li>
+        <li><strong>+10 ou mais acima</strong> → Sucesso Excepcional (efeito muito forte)</li>
+        <li><strong>20 natural</strong> → Crítico — o poder sai no máximo e ainda pode ter um efeito adicional poderoso</li>
+        <li><strong>1 natural</strong> → Falha Crítica — o poder falha de forma perigosa + o personagem sofre um Malefício imediato ou perde Humanidade</li>
+      </ul>
 
       <div class="highlight">
         <h4>Custo de Humanidade</h4>
         <ul>
-          <li>Resultado 15+ no d20 (antes dos bônus) → risco de teste de Humanidade.</li>
-          <li>Falha Crítica (1 natural) → teste automático com dificuldade alta.</li>
+          <li>Todo uso de Depravação com resultado <strong>15 ou mais no d20</strong> (antes dos bônus) já corre risco de teste de Humanidade.</li>
+          <li>Em Falha Crítica (1 natural), o teste de Humanidade é automático e com dificuldade alta.</li>
         </ul>
       </div>
     </section>
 
-    <!-- 1. SOMBRA -->
+    <!-- DEPRAVAÇÃO 1: SOMBRA -->
     <section id="deprav-sombra" class="section deprav-section" data-searchable>
       <h3><span class="deprav-num">1</span> Sombra</h3>
-      <div class="essencia"><strong>Essência:</strong> O que a realidade tentou apagar. Não é só escuridão — é o que foi negado, esquecido ou removido da existência.</div>
-      <div class="deprav-details">
-        <div>
-          <h4>Técnicas</h4>
-          <ul>
-            <li><strong>Manto de Ausência</strong> — difícil de ser registrado pela mente</li>
-            <li><strong>Sombra Prisional</strong> — sombra do alvo agarra</li>
-            <li><strong>Fusão com a Escuridão</strong> — dissolve e reaparece</li>
-            <li><strong>Roubo de Presença</strong> — apaga percepção</li>
-            <li><strong>Sombra Cortante</strong> — lâminas ou tentáculos</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Malefícios</h4>
-          <ul>
-            <li><strong>Leve:</strong> sentidos falham sob luz forte</li>
-            <li><strong>Moderado:</strong> pessoas esquecem de você</li>
-            <li><strong>Grave:</strong> partes da identidade somem; pode virar sombra viva</li>
-          </ul>
-        </div>
+      <div class="essencia">
+        <strong>Essência:</strong> A Sombra é o que a realidade tentou apagar. Não é só escuridão física — é o que foi negado, esquecido, censurado ou removido da existência. Quem a usa não “controla a escuridão”: ele convida aquilo que deveria permanecer invisível a voltar.
       </div>
-      <div class="vantagem"><strong>Vantagem:</strong> Em escuridão total, o poder aumenta drasticamente.</div>
+
+      <h4>Técnicas principais</h4>
+      <ul>
+        <li><strong>Manto de Ausência:</strong> o usuário e tudo que toca se tornam extremamente difíceis de perceber (não invisível perfeito, mas “esquecível”). Pessoas olham e não registram.</li>
+        <li><strong>Sombra Prisional:</strong> a sombra do alvo se ergue e o agarra, restringindo movimentos ou puxando-o para a escuridão.</li>
+        <li><strong>Fusão com a Escuridão:</strong> o usuário se dissolve em uma sombra e reaparece em outra área de penumbra no alcance.</li>
+        <li><strong>Roubo de Presença:</strong> o usuário “apaga” temporariamente a percepção de um objeto, pessoa ou evento recente da mente de quem está por perto.</li>
+        <li><strong>Sombra Cortante:</strong> a própria sombra do usuário se transforma em lâminas ou tentáculos que atacam.</li>
+      </ul>
+
+      <h4>Exemplos Práticos</h4>
+      <ul>
+        <li>Espionar um local permanecendo em cantos escuros sem ser notado.</li>
+        <li>Fazer com que um guarda “esqueça” de ter visto o grupo passar.</li>
+        <li>Em combate, usar a sombra do inimigo para imobilizá-lo enquanto o resto do grupo ataca.</li>
+        <li>Esconder um cadáver ou um objeto importante sob um véu de “não-percepção”.</li>
+      </ul>
+
+      <h4>Malefícios (progressivos)</h4>
+      <ul>
+        <li><strong>Leve:</strong> os sentidos começam a falhar em ambientes claros (visão e audição diminuem sob luz forte).</li>
+        <li><strong>Moderado:</strong> a presença do personagem se torna fraca. Pessoas o esquecem com facilidade, aliados precisam de esforço consciente para lembrarem dele.</li>
+        <li><strong>Grave:</strong> partes da identidade começam a sumir (memórias, nome, laços). Em casos extremos, o personagem pode se tornar uma sombra viva — ainda consciente, mas sem corpo físico estável e cada vez mais difícil de interagir com o mundo.</li>
+      </ul>
+
+      <div class="vantagem">
+        <strong>Vantagem Especial:</strong> Em escuridão total, o poder da Sombra aumenta drasticamente (dificuldade dos testes cai ou o alcance/efeito dobra, a critério do Mestre).
+      </div>
     </section>
 
-    <!-- 2. CARNE -->
+    <!-- DEPRAVAÇÃO 2: CARNE -->
     <section id="deprav-carne" class="section deprav-section" data-searchable>
       <h3><span class="deprav-num">2</span> Carne</h3>
-      <div class="essencia"><strong>Essência:</strong> A matéria viva rebelde. Sangue, osso, músculo e o desejo de transformar o corpo em algo mais.</div>
-      <div class="deprav-details">
-        <div>
-          <h4>Técnicas</h4>
-          <ul>
-            <li><strong>Regeneração Forçada</strong></li>
-            <li><strong>Membros Adicionais</strong></li>
-            <li><strong>Armadura Óssea</strong></li>
-            <li><strong>Controle Sanguíneo</strong></li>
-            <li><strong>Deformação</strong> (próprio ou alheio)</li>
-            <li><strong>Sobrevivência Aberrante</strong></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Malefícios</h4>
-          <ul>
-            <li><strong>Leve:</strong> mudanças sutis no corpo</li>
-            <li><strong>Moderado:</strong> membros extras sob estresse; dor constante</li>
-            <li><strong>Grave:</strong> perda da noção do próprio corpo; absorção instintiva de carne</li>
-          </ul>
-        </div>
+      <div class="essencia">
+        <strong>Essência:</strong> A Carne é a matéria viva rebelde. Ela não respeita a forma humana “correta”. É sangue, osso, músculo, órgãos e o desejo de transformar o corpo em algo mais.
       </div>
-      <div class="vantagem"><strong>Vantagem:</strong> Regeneração e resistência física superiores.</div>
+
+      <h4>Técnicas principais</h4>
+      <ul>
+        <li><strong>Regeneração Forçada:</strong> cicatriza ferimentos graves em segundos, mas o tecido regenerado pode sair deformado.</li>
+        <li><strong>Membros Adicionais:</strong> cria braços, tentáculos ou garras temporários.</li>
+        <li><strong>Armadura Óssea:</strong> ossos sobem à superfície formando placas protetoras.</li>
+        <li><strong>Controle Sanguíneo:</strong> coagula o sangue de um inimigo, causa hemorragias internas ou usa o próprio sangue como arma (chicotes, projéteis).</li>
+        <li><strong>Deformação:</strong> altera a anatomia do alvo (alonga membros, fecha olhos, transforma boca em algo monstruoso).</li>
+        <li><strong>Sobrevivência Aberrante:</strong> continua funcionando mesmo com órgãos destruídos ou cabeça parcialmente danificada por um tempo.</li>
+      </ul>
+
+      <h4>Exemplos Práticos</h4>
+      <ul>
+        <li>Sobreviver a um tiro no peito regenerando o coração em meio à luta.</li>
+        <li>Criar um segundo par de braços para segurar um inimigo enquanto ataca com os originais.</li>
+        <li>Forçar o corpo de um oponente a crescer um tumor doloroso ou a ter os ossos se quebrando de dentro para fora.</li>
+        <li>Usar a própria carne como escudo vivo (absorvendo dano e regenerando depois).</li>
+      </ul>
+
+      <h4>Malefícios (progressivos)</h4>
+      <ul>
+        <li><strong>Leve:</strong> o corpo começa a mudar sutilmente (olhos de cores diferentes, veias aparentes, cheiro metálico constante).</li>
+        <li><strong>Moderado:</strong> membros extras surgem involuntariamente em momentos de estresse. Órgãos mudam de lugar. O personagem sente dor constante de “ajuste”.</li>
+        <li><strong>Grave:</strong> perda gradual da noção de onde termina o próprio corpo. Pode começar a absorver carne de outros seres (aliados incluídos) de forma instintiva. Em estágios finais, o usuário se torna uma massa de carne mutável quase irreconhecível como humano.</li>
+      </ul>
+
+      <div class="vantagem">
+        <strong>Vantagem Especial:</strong> Regeneração e resistência física superiores aos outros elementos.
+      </div>
     </section>
 
-    <!-- 3. MENTE -->
+    <!-- DEPRAVAÇÃO 3: MENTE -->
     <section id="deprav-mente" class="section deprav-section" data-searchable>
       <h3><span class="deprav-num">3</span> Mente</h3>
-      <div class="essencia"><strong>Essência:</strong> O oculto dentro da consciência. Pensamentos, memórias e a percepção do que é real.</div>
-      <div class="deprav-details">
-        <div>
-          <h4>Técnicas</h4>
-          <ul>
-            <li><strong>Invasão de Pensamentos</strong></li>
-            <li><strong>Ilusão Mental</strong></li>
-            <li><strong>Apagamento Seletivo</strong></li>
-            <li><strong>Comando Subliminar</strong></li>
-            <li><strong>Previsão de Movimento</strong></li>
-            <li><strong>Muralha Mental</strong></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Malefícios</h4>
-          <ul>
-            <li><strong>Leve:</strong> pensamentos alheios vazam</li>
-            <li><strong>Moderado:</strong> dificuldade em distinguir memórias próprias</li>
-            <li><strong>Grave:</strong> identidade fragmenta; absorve traços de personalidade</li>
-          </ul>
-        </div>
+      <div class="essencia">
+        <strong>Essência:</strong> A Mente é o oculto dentro da consciência. Pensamentos, memórias, identidade e o conhecimento que não deveria ser conhecido. Ela não cria ilusões no mundo — ela altera o que a consciência percebe como real.
       </div>
-      <div class="vantagem"><strong>Vantagem:</strong> Identifica fraquezas e compreende outras Depravações.</div>
+
+      <h4>Técnicas principais</h4>
+      <ul>
+        <li><strong>Invasão de Pensamentos:</strong> lê intenções, memórias recentes ou medos superficiais.</li>
+        <li><strong>Ilusão Mental:</strong> faz o alvo ver aliados como inimigos, chão como abismo, ou o usuário como alguém completamente diferente.</li>
+        <li><strong>Apagamento Seletivo:</strong> remove ou altera memórias recentes (últimos minutos ou horas).</li>
+        <li><strong>Comando Subliminar:</strong> planta uma ordem simples que o alvo sente vontade de obedecer.</li>
+        <li><strong>Previsão de Movimento:</strong> lê a intenção de ataque um segundo antes dele acontecer.</li>
+        <li><strong>Muralha Mental:</strong> bloqueia tentativas de leitura ou ilusão de outros usuários de Mente.</li>
+      </ul>
+
+      <h4>Exemplos Práticos</h4>
+      <ul>
+        <li>Fazer um guarda abrir a porta porque “lembra” de ter recebido ordem para isso.</li>
+        <li>Em combate, fazer o inimigo atacar o próprio aliado por alguns turnos.</li>
+        <li>Apagar a memória de um interrogatório.</li>
+        <li>Identificar qual Depravação o oponente está usando ao “sentir” a estrutura do poder.</li>
+      </ul>
+
+      <h4>Malefícios (progressivos)</h4>
+      <ul>
+        <li><strong>Leve:</strong> pensamentos alheios começam a vazar para a mente do usuário (vozes, memórias fragmentadas).</li>
+        <li><strong>Moderado:</strong> dificuldade crescente em distinguir quais memórias são suas e quais foram roubadas. Personalidade pode oscilar.</li>
+        <li><strong>Grave:</strong> a identidade começa a se fragmentar. O usuário pode absorver traços de personalidade de quem invadiu. Em casos extremos, perde a noção de quem é e se torna um “ninho” de consciências misturadas. Atacar a identidade de alguém também corrói a própria humanidade.</li>
+      </ul>
+
+      <div class="vantagem">
+        <strong>Vantagem Especial:</strong> Capacidade de identificar fraquezas e compreender o funcionamento de outros Elementos durante o combate.
+      </div>
     </section>
 
-    <!-- 4. ALMA -->
+    <!-- DEPRAVAÇÃO 4: ALMA -->
     <section id="deprav-alma" class="section deprav-section" data-searchable>
       <h3><span class="deprav-num">4</span> Alma</h3>
-      <div class="essencia"><strong>Essência:</strong> O que permanece quando corpo e mente acabam. Vínculos, essência e identidade espiritual.</div>
-      <div class="deprav-details">
-        <div>
-          <h4>Técnicas</h4>
-          <ul>
-            <li><strong>Golpe Essencial</strong> (ignora armadura)</li>
-            <li><strong>Romper Vínculos</strong></li>
-            <li><strong>Percepção Espiritual</strong></li>
-            <li><strong>Escudo da Essência</strong></li>
-            <li><strong>Vínculo Forçado</strong></li>
-            <li><strong>Expulsão</strong></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Malefícios</h4>
-          <ul>
-            <li><strong>Leve:</strong> eco emocional de quem atacou</li>
-            <li><strong>Moderado:</strong> perda gradual de emoções e vínculos</li>
-            <li><strong>Grave:</strong> a própria Alma fragmenta; identidade se perde</li>
-          </ul>
-        </div>
+      <div class="essencia">
+        <strong>Essência:</strong> A Alma é o que permanece quando o corpo e a mente acabam. É a essência, os vínculos, a identidade espiritual. Atacar a Alma é atacar o que faz alguém ser alguém.
       </div>
-      <div class="vantagem"><strong>Vantagem:</strong> Ataques à Alma ignoram grande parte das defesas físicas.</div>
+
+      <h4>Técnicas principais</h4>
+      <ul>
+        <li><strong>Golpe Essencial:</strong> ataque que ignora armadura e resistência física, atingindo diretamente a essência (causa dano espiritual + possível trauma emocional).</li>
+        <li><strong>Romper Vínculos:</strong> corta laços sobrenaturais, possessões, pactos ou até laços emocionais fortes temporariamente.</li>
+        <li><strong>Percepção Espiritual:</strong> vê entidades invisíveis, restos de almas e auras de Conturbação.</li>
+        <li><strong>Escudo da Essência:</strong> protege a própria Alma (e eventualmente a de aliados) contra ataques mentais e espirituais.</li>
+        <li><strong>Vínculo Forçado:</strong> cria um laço temporário entre duas pessoas (pode ser usado para transferir dor, emoção ou até parte de um ferimento espiritual).</li>
+        <li><strong>Expulsão:</strong> força espíritos ou possessões a saírem de um corpo.</li>
+      </ul>
+
+      <h4>Exemplos Práticos</h4>
+      <ul>
+        <li>Atravessar a armadura de um inimigo e ferir sua essência diretamente.</li>
+        <li>Cortar o vínculo de um espírito que está controlando um aliado.</li>
+        <li>Sentir se alguém está mentindo sobre algo profundamente ligado à sua identidade.</li>
+        <li>Criar um laço com um companheiro ferido para compartilhar o fardo espiritual.</li>
+      </ul>
+
+      <h4>Malefícios (progressivos)</h4>
+      <ul>
+        <li><strong>Leve:</strong> após atacar a Alma de alguém, o usuário sente eco emocional (tristeza, raiva ou vazio que não são seus).</li>
+        <li><strong>Moderado:</strong> perda gradual de emoções ou memórias afetivas. Vínculos importantes começam a enfraquecer.</li>
+        <li><strong>Grave:</strong> a própria Alma começa a se fragmentar. Partes da identidade (capacidade de amar, medo, esperança) podem se perder permanentemente. Em estágios avançados, o usuário pode se tornar uma presença espiritual quase desconectada do corpo.</li>
+      </ul>
+
+      <div class="vantagem">
+        <strong>Vantagem Especial:</strong> Ataques à Alma ignoram grande parte das defesas físicas.
+      </div>
     </section>
 
-    <!-- 5. SONHOS -->
+    <!-- DEPRAVAÇÃO 5: SONHOS -->
     <section id="deprav-sonhos" class="section deprav-section" data-searchable>
       <h3><span class="deprav-num">5</span> Sonhos</h3>
-      <div class="essencia"><strong>Essência:</strong> Possibilidades que nunca deveriam ter forma. O imaginado se torna real — temporariamente.</div>
-      <div class="deprav-details">
-        <div>
-          <h4>Técnicas</h4>
-          <ul>
-            <li><strong>Cenário Imaginário</strong></li>
-            <li><strong>Criação Temporária</strong></li>
-            <li><strong>Armadilha Onírica</strong></li>
-            <li><strong>Arma do Pesadelo</strong></li>
-            <li><strong>Fusão de Realidades</strong></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Malefícios</h4>
-          <ul>
-            <li><strong>Leve:</strong> dificuldade em distinguir sonho de realidade</li>
-            <li><strong>Moderado:</strong> criações desenvolvem vontade própria</li>
-            <li><strong>Grave:</strong> estado semi-onírico permanente</li>
-          </ul>
-        </div>
+      <div class="essencia">
+        <strong>Essência:</strong> Sonhos são possibilidades que nunca deveriam ter forma. Dentro do Twilight, o imaginado pode se tornar real — pelo menos temporariamente. É o elemento da narrativa forçada sobre a realidade.
       </div>
-      <div class="vantagem"><strong>Vantagem:</strong> Maior capacidade de alterar o cenário de combate.</div>
+
+      <h4>Técnicas principais</h4>
+      <ul>
+        <li><strong>Cenário Imaginário:</strong> altera o ambiente de combate (transforma uma sala em labirinto, cria névoa, faz o chão parecer abismo).</li>
+        <li><strong>Criação Temporária:</strong> invoca objetos ou criaturas sonhadas (armas, paredes, bestas de pesadelo).</li>
+        <li><strong>Armadilha Onírica:</strong> prende a mente do alvo em um sonho enquanto o corpo fica vulnerável.</li>
+        <li><strong>Arma do Pesadelo:</strong> transforma o medo ou desejo do alvo em uma criatura que o ataca.</li>
+        <li><strong>Fusão de Realidades:</strong> faz com que o alvo acredite (e sinta) que está em outro lugar completamente.</li>
+      </ul>
+
+      <h4>Exemplos Práticos</h4>
+      <ul>
+        <li>Criar uma ponte imaginária sobre um abismo (funciona enquanto a crença se mantém).</li>
+        <li>Fazer um inimigo lutar contra uma versão sonhada de seus piores medos.</li>
+        <li>Transformar uma sala comum em um labirinto de espelhos durante o combate.</li>
+        <li>Criar uma distração massiva (uma multidão sonhada, um incêndio ilusório) para fuga.</li>
+      </ul>
+
+      <h4>Malefícios (progressivos)</h4>
+      <ul>
+        <li><strong>Leve:</strong> dificuldade crescente em distinguir sonho de realidade após usar o poder.</li>
+        <li><strong>Moderado:</strong> criações começam a desenvolver vontade própria. Uma criatura sonhada pode recusar ordens ou atacar o criador.</li>
+        <li><strong>Grave:</strong> o usuário passa a viver em um estado semi-onírico permanente. Memórias de eventos reais e sonhados se misturam. Em casos extremos, partes do mundo real ao redor dele começam a se comportar como sonho (instável e mutável).</li>
+      </ul>
+
+      <div class="vantagem">
+        <strong>Vantagem Especial:</strong> Maior capacidade de alterar o cenário de combate.
+      </div>
     </section>
 
-    <!-- 6. DESEJOS -->
+    <!-- DEPRAVAÇÃO 6: DESEJOS -->
     <section id="deprav-desejos" class="section deprav-section" data-searchable>
       <h3><span class="deprav-num">6</span> Desejos</h3>
-      <div class="essencia"><strong>Essência:</strong> A vontade pura forçando o Twilight a responder — com todas as consequências literais e perversas.</div>
-      <div class="deprav-details">
-        <div>
-          <h4>Técnicas</h4>
-          <ul>
-            <li><strong>Desejo de Proteção</strong></li>
-            <li><strong>Desejo de Cura</strong></li>
-            <li><strong>Desejo de Aprisionamento</strong></li>
-            <li><strong>Alteração de Condição</strong></li>
-            <li><strong>Desejo de Vingança / Punição</strong></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Malefícios</h4>
-          <ul>
-            <li>Todo desejo tem preço</li>
-            <li>Interpretação literal ou maliciosa é comum</li>
-            <li>Quanto maior o desejo, maior a cobrança</li>
-            <li>Abuso faz o Twilight “antecipar” desejos de formas piores</li>
-          </ul>
-        </div>
+      <div class="essencia">
+        <strong>Essência:</strong> Desejos são a vontade pura forçando o Twilight a responder. Diferente dos Sonhos (que dão forma ao imaginável), Desejos tentam realizar o que é verdadeiramente querido — com todas as consequências literais e perversas.
       </div>
-      <div class="vantagem"><strong>Vantagem:</strong> Pode alterar condições da batalha sem necessariamente causar dano.</div>
+
+      <h4>Técnicas principais</h4>
+      <ul>
+        <li><strong>Desejo de Proteção:</strong> “Eu não quero ser atingido” → o ataque desvia ou falha (com preço).</li>
+        <li><strong>Desejo de Cura:</strong> “Eu quero que essa ferida desapareça” → a ferida some, mas o preço pode ser outra coisa (memória, emoção, tempo de vida).</li>
+        <li><strong>Desejo de Aprisionamento:</strong> “Eu quero que ele não consiga fugir” → correntes de vontade surgem.</li>
+        <li><strong>Alteração de Condição:</strong> “Eu quero que essa porta exista” ou “Eu quero que a luz se apague”.</li>
+        <li><strong>Desejo de Vingança / Punição:</strong> força uma condição específica sobre o alvo ligada ao desejo emocional do usuário.</li>
+      </ul>
+
+      <h4>Exemplos Práticos</h4>
+      <ul>
+        <li>Fazer uma porta aparecer em uma parede sólida no momento crítico.</li>
+        <li>Desejar que um inimigo “não consiga me ver” e ele realmente perde a capacidade de focar no usuário por alguns turnos.</li>
+        <li>Curar um aliado morrendo… mas o preço é que o usuário perde a capacidade de sentir alegria por dias.</li>
+        <li>Desejar que “ninguém aqui morra hoje” e o Twilight interpretar isso de forma cruel (ninguém morre, mas todos ficam em estado de quase-morte permanente até o desejo se romper).</li>
+      </ul>
+
+      <h4>Malefícios (sempre presentes)</h4>
+      <p>Todo desejo tem preço. O Twilight quase nunca concede de graça.</p>
+      <ul>
+        <li>O preço pode ser físico, mental, espiritual ou narrativo.</li>
+        <li>Interpretação literal ou maliciosa é comum.</li>
+        <li>Quanto maior e mais emocional o desejo, maior e mais imprevisível a cobrança.</li>
+        <li>Abusar de Desejos pode fazer o Twilight começar a “antecipar” os desejos do usuário e realizá-los de formas cada vez piores.</li>
+      </ul>
+
+      <div class="vantagem">
+        <strong>Vantagem Especial:</strong> Pode alterar condições da batalha sem necessariamente causar dano.
+      </div>
     </section>
 
-    <!-- 7. CAOS -->
+    <!-- DEPRAVAÇÃO 7: CAOS -->
     <section id="deprav-caos" class="section deprav-section" data-searchable>
       <h3><span class="deprav-num">7</span> Caos</h3>
-      <div class="essencia"><strong>Essência:</strong> A quebra das regras. Anomalia pura. O usuário não controla o Caos — apenas abre a porta.</div>
-      <div class="deprav-details">
-        <div>
-          <h4>Técnicas</h4>
-          <ul>
-            <li><strong>Inversão de Causa e Efeito</strong></li>
-            <li><strong>Distorção Espacial</strong></li>
-            <li><strong>Propriedade Impossível</strong></li>
-            <li><strong>Estado Duplo</strong></li>
-            <li><strong>Quebra de Regra Local</strong></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Malefícios</h4>
-          <ul>
-            <li>Toda alteração carrega risco colateral</li>
-            <li>Fica difícil prever o resultado das próprias ações</li>
-            <li>Em estágios avançados: corpo e mente “glitcham”</li>
-          </ul>
-        </div>
+      <div class="essencia">
+        <strong>Essência:</strong> O Caos é a quebra das regras. Ele não obedece a forma, causa e efeito ou lógica. É anomalia pura. O usuário não “controla” o Caos — ele apenas abre a porta e espera (ou reza).
       </div>
-      <div class="vantagem"><strong>Vantagem:</strong> Pode ignorar parcialmente regras de vantagem dos outros elementos (alto risco).</div>
+
+      <h4>Técnicas principais</h4>
+      <ul>
+        <li><strong>Inversão de Causa e Efeito:</strong> um ataque que deveria matar o alvo em vez disso cura o usuário (ou vice-versa).</li>
+        <li><strong>Distorção Espacial:</strong> uma porta leva para outro lugar, o chão se torna teto, distâncias se encolhem ou expandem.</li>
+        <li><strong>Propriedade Impossível:</strong> uma arma atravessa parede sem quebrá-la; uma pessoa cai para cima.</li>
+        <li><strong>Estado Duplo:</strong> um objeto ou pessoa existe em dois estados ao mesmo tempo (vivo e morto, presente e ausente).</li>
+        <li><strong>Quebra de Regra Local:</strong> por alguns turnos, uma regra do combate ou do ambiente deixa de funcionar (gravidade, solididade, passagem do tempo).</li>
+      </ul>
+
+      <h4>Exemplos Práticos</h4>
+      <ul>
+        <li>Fazer um inimigo “cair para cima” e se prender no teto.</li>
+        <li>Transformar uma parede sólida em algo que pode ser atravessado… e depois ela volta a ser sólida com alguém no meio.</li>
+        <li>Fazer com que um ataque mortal no usuário em vez disso mate um inimigo aleatório próximo.</li>
+        <li>Criar uma zona onde as regras de vantagem dos elementos param de funcionar normalmente.</li>
+      </ul>
+
+      <h4>Malefícios (progressivos e imprevisíveis)</h4>
+      <ul>
+        <li>Toda alteração carrega risco de consequência colateral.</li>
+        <li>Quanto mais usado, mais difícil prever o resultado das próprias ações.</li>
+        <li>O usuário começa a perder a capacidade de distinguir realidade coerente de realidade caótica.</li>
+        <li>Em estágios avançados, o próprio corpo e mente do usuário podem começar a “glitchar” (membros em posições erradas, memórias fora de ordem, ações que acontecem antes da intenção).</li>
+      </ul>
+
+      <div class="vantagem">
+        <strong>Vantagem Especial:</strong> Pode ignorar parcialmente as regras de vantagem dos outros elementos (com risco alto de efeito colateral).
+      </div>
     </section>
 
-    <!-- 8. MEDO -->
+    <!-- DEPRAVAÇÃO 8: MEDO -->
     <section id="deprav-medo" class="section deprav-section" data-searchable>
       <h3><span class="deprav-num">8</span> Medo</h3>
-      <div class="essencia"><strong>Essência:</strong> A expectativa da ameaça se tornando real. O usuário cultiva o medo e o transforma em presença.</div>
-      <div class="deprav-details">
-        <div>
-          <h4>Técnicas</h4>
-          <ul>
-            <li><strong>Detecção de Fobia</strong></li>
-            <li><strong>Manifestação do Terror</strong></li>
-            <li><strong>Pânico Induzido</strong></li>
-            <li><strong>Alucinação de Morte</strong></li>
-            <li><strong>Contágio do Medo</strong></li>
-            <li><strong>Amplificação</strong></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Malefícios</h4>
-          <ul>
-            <li><strong>Leve:</strong> sente ecos do medo que manipula</li>
-            <li><strong>Moderado:</strong> risco de absorver fobias alheias</li>
-            <li><strong>Grave:</strong> o próprio medo pode se tornar real; catalisador de pânico</li>
-          </ul>
-        </div>
+      <div class="essencia">
+        <strong>Essência:</strong> O Medo é a expectativa da ameaça se tornando real. No Twilight, aquilo que alguém teme profundamente pode ganhar forma. O usuário não cria o medo — ele o cultiva e o transforma em presença.
       </div>
-      <div class="vantagem"><strong>Vantagem:</strong> Quanto mais assustado estiver o alvo, mais poderoso o Medo se torna.</div>
+
+      <h4>Técnicas principais</h4>
+      <ul>
+        <li><strong>Detecção de Fobia:</strong> sente o que o alvo mais teme.</li>
+        <li><strong>Manifestação do Terror:</strong> cria uma criatura ou evento ligado diretamente ao medo do alvo.</li>
+        <li><strong>Pânico Induzido:</strong> força o alvo a entrar em estado de pânico (fuga, paralisia ou ataque desesperado).</li>
+        <li><strong>Alucinação de Morte:</strong> faz o alvo viver a própria morte de forma vívida.</li>
+        <li><strong>Contágio do Medo:</strong> o medo de um alvo começa a se espalhar para outros próximos.</li>
+        <li><strong>Amplificação:</strong> quanto mais assustado o alvo fica, mais forte o poder do usuário se torna contra ele.</li>
+      </ul>
+
+      <h4>Exemplos Práticos</h4>
+      <ul>
+        <li>Um inimigo com medo de afogamento começa a sentir os pulmões se enchendo de água mesmo em terra seca.</li>
+        <li>Fazer um grupo de guardas entrar em pânico coletivo ao manifestar a criatura que mais temem.</li>
+        <li>Usar o medo de abandono de alguém para fazê-lo ver seus aliados desaparecendo um a um.</li>
+        <li>Em combate, transformar o medo de dor do oponente em dor real e paralisante.</li>
+      </ul>
+
+      <h4>Malefícios (progressivos)</h4>
+      <ul>
+        <li><strong>Leve:</strong> o usuário começa a sentir ecos do medo que está manipulando.</li>
+        <li><strong>Moderado:</strong> risco crescente de absorver o medo do alvo. Fobias alheias podem se tornar suas.</li>
+        <li><strong>Grave:</strong> o próprio Medo do usuário pode se tornar real. Se ele tem medo de algo específico, o Twilight pode materializá-lo. Em casos extremos, o usuário se torna um catalisador ambulante de pânico — e perde o controle sobre o que manifesta.</li>
+      </ul>
+
+      <div class="vantagem">
+        <strong>Vantagem Especial:</strong> Quanto mais assustado estiver o inimigo, mais poderoso o Medo se torna.
+      </div>
     </section>
 
     <footer class="footer">
-      <p>Floresta do Crepúsculo — Manual do Jogador</p>
-      <p class="muted">Site estático · Funciona no GitHub Pages sem Actions</p>
+      <p>Twilight RPG — Manual do Jogador</p>
+      <p class="muted">Site estático • Funciona no GitHub Pages sem Actions</p>
     </footer>
   </main>
 
   <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
+
   <script src="script.js"></script>
 </body>
 </html>
